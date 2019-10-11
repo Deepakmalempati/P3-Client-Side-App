@@ -4,8 +4,8 @@ QUnit.test('TEST mul', assert => {
   assert.equal(mul(1, 1), 1, 'Positive integers')
   assert.equal(mul(-1, -1), 1,'Negative integers')
   assert.equal(mul(-10, 10), -100,'Mixed')
-  assert.equal(mul(-10.99, 10.99), -100,'Mixed double values')
-  assert.equal(mul(1.22, 1.56), -100,'positive decimal vales')
+  assert.equal(mul(-10.99, 10.99), -120.7801,'Mixed double values')
+  assert.equal(mul(1.22, 1.56), 1.9032,'positive decimal vales')
 })
 
 QUnit.config.autostart = false  // sync = false; start after loading html
@@ -34,7 +34,7 @@ window.addEventListener('load', () => {
       QUnit.start()
     })
 })
-QUnit.module('MAIN MODULE 2'); 
+ 
 QUnit.test("TEST first number validation", assert => {
   const input = document.querySelector('#height')
   const warning = document.querySelector('#firstWarning')
