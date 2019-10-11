@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>contact Us</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
+
+</head>
+<header><center>Deepak Malempati</center></header>
+<body background="background.jpg">
+	<main>
+<nav>
+		<ul id="menutab">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="bmi.html">Calculate BMI</a></li>
+		</ul>
+	</nav>
+	<section>
+	<center><h1>Calculate your body mass index</h1></center>
+	
+		<center><table>
+	<th></th>
+			<tr>
+				<td>Enter Height in feet</td>
+				<td><input type="text" id="height" placeholder="Enter your height in feet" >
+					<span id="firstWarning" class="text-danger"></span></td>
+			</tr>
+			<tr>
+				<td>Enter Weight in kilograms</td>
+				<td><input type="text" id="weight" placeholder="enter your weight in lb">
+					<span id="secondWarning" class="text-danger"></span></td>
+			</tr>
+			
+			
+			<tr>
+				<td></td>
+				<td><center><button id="bmiButton" onclick="updateBMI()">Calculate</button></center></td>
+				<td><center><button id="factButton" onclick="loadDoc()" >Get Fun Fact</button></center></td>
+			</tr>
+			<tr><td><Strong><p id="answer"></p></Strong></td></tr>
+			<tr><td><p id="storagecount"></p></td></tr>
+			<tr><td><p id="jokespace"></p></td></tr>
+		</table><p><a href="test.html" style="color: black">Tests || </a>
+	
+			Developed by Deepak</p></center></section>
+		<script src="bmi.js"></script>
+		<script src="test.js"></script>
+
+	</main>
+</body>
+
+<center><footer>
+	
+</footer></center>
+</html>
